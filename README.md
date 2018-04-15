@@ -2,8 +2,8 @@ bitcoind-rpc-zula.js
 ===============
 
 [![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc-zula.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc-zula)
-[![Build Status](https://img.shields.io/travis/zulacoin/bitcoind-rpc-zula.svg?branch=master&style=flat-square)](https://travis-ci.org/zulacoin/bitcoind-rpc-zula)
-[![Coverage Status](https://img.shields.io/coveralls/zulacoin/bitcoind-rpc-zula.svg?style=flat-square)](https://coveralls.io/r/zulacoin/bitcoind-rpc-zula?branch=master)
+[![Build Status](https://img.shields.io/travis/zuladev/bitcoind-rpc-zula.svg?branch=master&style=flat-square)](https://travis-ci.org/zuladev/bitcoind-rpc-zula)
+[![Coverage Status](https://img.shields.io/coveralls/zuladev/bitcoind-rpc-zula.svg?style=flat-square)](https://coveralls.io/r/zuladev/bitcoind-rpc-zula?branch=master)
 
 A client library to connect to Zula Core RPC in JavaScript.
 
@@ -17,14 +17,14 @@ npm install bitcoind-rpc-zula
 
 ## RpcClient
 
-Arguments : 
+Arguments :
 
 	- protocol : (string - optional) - (default: 'https') - Set the protocol to be used. Either `http` or `https`.
 	- user : (string - optional) - (default: 'user') - Set the user credential.
 	- pass : (string - optional) - (default: 'pass') - Set the password credential.
 	- host : (string - optional) - (default: '127.0.0.1') - The host you want to connect with.
 	- port : (integer - optional) - (default: 9998) - Set the port on which perform the RPC command.
-	
+
 ## Examples
 
 ```javascript
@@ -80,7 +80,7 @@ var run = function() {
 };
 ```
 
-## Help 
+## Help
 
 You can dynamically access to the help of each method by doing
 ```
@@ -88,8 +88,8 @@ const RpcClient = require('bitcoind-rpc-zula');
 var client = new RPCclient({
     protocol:'http',
     user: 'zula',
-    pass: 'local321', 
-    host: '127.0.0.1', 
+    pass: 'local321',
+    host: '127.0.0.1',
     port: 19998
 });
 
